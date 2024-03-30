@@ -19,6 +19,10 @@ a {
   border: 1px solid black;
 }
 
+.chooseNumFooter {
+  width: 390px;
+}
+
 .btn-close {
   --bs-btn-close-bg: url('./assets/img/clear.png') !important;
 }
@@ -30,9 +34,14 @@ a {
   justify-content: center;
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
 
 @media screen and (max-width:390px) {
-  .main {
+
+  .main,
+  .chooseNumFooter {
     width: 100%;
   }
 }

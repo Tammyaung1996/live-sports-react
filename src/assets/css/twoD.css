@@ -86,8 +86,8 @@ tr:nth-child(even) {
 }
 
 .betBtn {
-    color: #fff;
-    background: #5987CC;
+    color: #fff !important;
+    background: #5987CC !important;
 }
 
 .lottoModal .modal-content {

@@ -1,0 +1,81 @@
+input {
+    background: #10061E !important;
+    color: #fff !important;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #fff !important;
+    font-size: 14px;
+
+}
+
+.betClose {
+    color: #fff;
+    background: #5987CC;
+}
+
+.twoDNumbers {
+    height: max-content;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #2B1C40;
+    color: #fff;
+
+}
+
+.number {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+}
+
+.numberContainer {
+    background: #431E77;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+    width: 80%;
+    height: 3px;
+    background: #2B1C40;
+    border-radius: 3px;
+    position: relative;
+}
+
+.activeBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+
+}
+
+.chooseNumFooter {
+    background: #10061E;
+    text-align: center;
+}
+
+.chooseNumDelBtn {
+    margin-right: 20px;
+    background: #FFDAD6;
+    color: #410002;
+    border: none;
+    font-size: 13px;
+}
+
+.chooseNumBetBtn {
+    background: #A6FCE7;
+    color: #000;
+    border: none;
+    font-size: 13px;
+}
