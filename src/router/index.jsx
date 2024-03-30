@@ -2,9 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/Layout";
 import HomePage from "../pages/Home";
 import TwoDPage from "../pages/TwoD";
+
 import Login from '../pages/Login';
 import ForgetPassword from "../pages/ForgetPassword";
 import Register from "../pages/Register";
+
+import TwoDChooseNumberPage from "../pages/TwoDChooseNumber";
+
 
 const router = createBrowserRouter([
     {
@@ -34,6 +38,10 @@ const router = createBrowserRouter([
                     {
                         path: 'twoD',
                         element: <TwoDPage />
+                    },
+                    {
+                        path: 'chooseNumber',
+                        element: <TwoDChooseNumberPage />
                     }
                 ]
             }

@@ -7,7 +7,14 @@ body {
   overflow-x: hidden;
 }
 
-.main  {
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.main {
+
   width: 390px;
   height: 100vh;
   margin: auto;
@@ -22,5 +29,31 @@ body {
 @media screen and (max-width:390px) {
   .main , .navs , .footers {
     width: 100vw;
+
+.chooseNumFooter {
+  width: 390px;
+}
+
+.btn-close {
+  --bs-btn-close-bg: url('./assets/img/clear.png') !important;
+}
+
+.modal-dialog {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+@media screen and (max-width:390px) {
+
+  .main,
+  .chooseNumFooter {
+    width: 100%;
+
   }
 }
