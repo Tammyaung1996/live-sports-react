@@ -1,12 +1,13 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import LottoNavbar from './LottoNavbar'
 import Navbar from './Navbar'
 
 const Layout = () => {
+    const { pathname } = useLocation();
     return (
         <div className="main">
-            {window.location.pathname.includes('/2d') || window.location.pathname.includes('/2d') || window.location.pathname.includes('/football') ? <LottoNavbar /> : <Navbar />}
+            {pathname.includes('/2d') || pathname.includes('/3d') || pathname.includes('/football') ? <LottoNavbar /> : <Navbar />}
             <Outlet />
 
         </div>
