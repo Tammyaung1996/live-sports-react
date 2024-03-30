@@ -22,9 +22,9 @@ const Footer = () => {
                 {
                     footers.map((footer)=>{
                         return (
-                            <Link to={footer.link} className='text-center text-decoration-none' style={{color:'#b4a9a7'}}>
-                                <footer.icon size={25}/>
-                                <p>{footer.title}</p>
+                            <Link to={footer.link} className='text-center text-decoration-none' >
+                                <footer.icon size={25} style={{color:'#b4a9a7'}}/>
+                                <p style={{color:'#b4a9a7'}}>{footer.title}</p>
                             </Link>
                         );
                     })

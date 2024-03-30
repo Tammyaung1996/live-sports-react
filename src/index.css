@@ -29,6 +29,8 @@ a {
 @media screen and (max-width:390px) {
   .main , .navs , .footers {
     width: 100vw;
+  
+  }
 
 .chooseNumFooter {
   width: 390px;
@@ -47,6 +49,7 @@ a {
 
 .cursorPointer {
   cursor: pointer;
+}
 }
 
 @media screen and (max-width:390px) {
