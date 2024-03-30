@@ -1,0 +1,16 @@
+.logins{
+    background: url(../img/dragonScalePattern.png);
+}
+
+.inputs{
+    background-color: #2b1c40;
+}
+
+.inputs::placeholder{
+    color: #5b4d64;
+}
+
+.inputs:focus{
+    background-color: #2b1c40;
+    color: #5b4d64;
+}
