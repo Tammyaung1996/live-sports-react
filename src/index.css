@@ -7,6 +7,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 .main {
   width: 390px;
   height: 100vh;
@@ -14,8 +19,20 @@ body {
   border: 1px solid black;
 }
 
+.btn-close {
+  --bs-btn-close-bg: url('./assets/img/clear.png') !important;
+}
+
+.modal-dialog {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 @media screen and (max-width:390px) {
   .main {
-    width: 100vw;
+    width: 100%;
   }
 }

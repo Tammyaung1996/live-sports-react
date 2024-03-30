@@ -1,4 +1,108 @@
 .twoDContainer {
+    background-color: #10061e;
     background-image: url('../img/dragonScalePattern.png');
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.lottoNavbar {
+    color: #fff;
+    background: #10061e;
+    border-bottom: 1px solid #10061e;
+    cursor: pointer;
+}
+
+.backArrow {
+    width: 15px;
+    height: 20px;
+}
+
+.lottoLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.support {
+    width: 25px;
+    height: 25px;
+}
+
+.playerInfo {
+    background: #56BCD3;
+}
+
+.playerPrice {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.playerWalletContainer {
+    height: max-content;
+    background: #5987CC;
+}
+
+.number {
+    color: #5987CC;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.lottoHomeContainer {
+    background: #431E77;
+    color: #fff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.midMenu {
+    margin-top: -25px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+th {
+    background: #5987CC;
+    color: #fff;
+}
+
+tr:nth-child(odd) {
+    background: #A6FCE7;
+    color: #000;
+}
+
+tr:nth-child(even) {
+    background-color: #5d1fb3;
+}
+
+.betBtn {
+    color: #fff;
+    background: #5987CC;
+}
+
+.lottoModal .modal-content {
+    background: #2B1C40 !important;
+    color: #fff;
+}
+
+.whiteBtn {
+    background: #fff;
+    color: #000;
+
+}
+
+.purpleBtn {
+    color: #fff;
+    background: #431E77;
+
 }
