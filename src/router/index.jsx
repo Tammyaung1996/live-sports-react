@@ -8,6 +8,7 @@ import ForgetPassword from "../pages/ForgetPassword";
 import Register from "../pages/Register";
 
 import TwoDChooseNumberPage from "../pages/TwoDChooseNumber";
+import TwoDCheckoutPage from "../pages/TwoDCheckout";
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
                     {
                         path: 'chooseNumber',
                         element: <TwoDChooseNumberPage />
+                    },
+                    {
+                        path: 'checkout',
+                        element: <TwoDCheckoutPage />
                     }
                 ]
             }
