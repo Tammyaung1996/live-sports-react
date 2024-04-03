@@ -9,8 +9,6 @@ body {
   width: 100%;
 }
 
-
-
 a {
   text-decoration: none !important;
   color: inherit !important;
@@ -23,35 +21,30 @@ a {
   right: 0;
 }
 
-/* .navs,
-.footers {
-  width: 390px;
-  margin: auto;
-} */
+.offcanvas.offcanvas-top {
+  height: 100vh !important;
+  z-index: 9999;
+  background: #2B1C40;
+  color: #fff;
+}
+
+.chooseNumFooter {
+  left: 0;
+  right: 0;
+}
 
 @media screen and (min-width:500px) {
 
   .main,
   .footers,
+  .fixed-top,
   .chooseNumFooter {
     width: 390px;
     margin: auto;
   }
 }
 
-
-
-
-
 @media screen and (max-width:390px) {
-
-  /* .navs,
-  .footers {
-    width: 100vw;
-
-  } */
-
-
   .btn-close {
     --bs-btn-close-bg: url('./assets/img/clear.png') !important;
   }

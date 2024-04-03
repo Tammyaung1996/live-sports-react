@@ -24,7 +24,7 @@ const TwoDPage = () => {
         { time: '04:30 AM', class: 'purpleBtn' },
     ]
     return (
-        <div className='twoDContainer py-2 pb-5'>
+        <div className='twoDContainer py-2 '>
             <PlayerInfo />
             <div className="my-3  mx-3 text-center py-2 border-top border-bottom">
                 <h1 className='number'>26</h1>
