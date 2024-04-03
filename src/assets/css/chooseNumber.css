@@ -16,7 +16,8 @@ input::placeholder {
 }
 
 .twoDNumbers {
-    height: max-content;
+    margin-top: 10px;
+    height: 300px;
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -78,4 +79,69 @@ input::placeholder {
     color: #000;
     border: none;
     font-size: 13px;
+}
+
+.kwayNumber {
+    background: #431E77;
+    width: 75px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.amyanChooseModal {
+    height: 100vh;
+    top: 40px;
+    width: 390px;
+    overflow-y: scroll;
+}
+
+
+.amyanChooseModal .modal-content {
+    background: #2B1C40 !important;
+    color: #fff;
+
+}
+
+.natkhatChooseNumber {
+    background: #431E77;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 6px;
+    margin-bottom: 8px;
+}
+
+.amyanChooseNumber {
+    background: #431E77;
+    width: 75px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:390px) {
+    .amyanChooseModal .modal-header {
+        margin-top: 1700px;
+    }
+}
+
+@media screen and (max-width:323px) {
+    .amyanChooseModal .modal-header {
+        margin-top: 2100px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .amyanChooseModal .modal-header {
+        margin-top: 2160px;
+    }
 }

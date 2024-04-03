@@ -24,7 +24,7 @@ const TwoDPage = () => {
         { time: '04:30 AM', class: 'purpleBtn' },
     ]
     return (
-        <div className='twoDContainer py-2'>
+        <div className='twoDContainer py-2 pb-5'>
             <PlayerInfo />
             <div className="my-3  mx-3 text-center py-2 border-top border-bottom">
                 <h1 className='number'>26</h1>
@@ -43,15 +43,17 @@ const TwoDPage = () => {
                     </Modal.Header>
                     <Modal.Body>
                         {times.map((item) => {
-                            return <button onClick={handleClose} key={item.time} className={`${item.class} py-2 border-0 w-100 text-center  rounded-3 mb-3`}>
-                                {item.time}
-                            </button>
+                            return <NavLink to={'/2d/chooseNumber'} key={item.time} >
+                                <button onClick={handleClose} className={`${item.class} py-2 border-0 w-100 text-center  rounded-3 mb-3`}>
+                                    {item.time}
+                                </button>
+                            </NavLink>
                         })}
                     </Modal.Body>
 
                 </Modal>
             </div>
-            <div className="lottoHomeContainer px-3 py-2 mt-4 ">
+            <div className="mb-5 lottoHomeContainer px-3 py-2 mt-4 ">
                 <div className="midMenu d-flex align-items-center justify-content-between ">
                     {lottoHome.map((item) => {
                         return <NavLink to={item.link} key={item.id}>
