@@ -42,7 +42,7 @@ const TwoDChooseNumberPage = () => {
                         <Form.Control type="number" placeholder="အနည်းဆုံး ၁၀၀ကျပ်" />
                     </Form.Group>
                 </Form>
-                <div >
+                <div  >
                     <div className="betClose rounded-3 py-3 px-3">
                         <p className='text-center p-0 m-0 mb-2'>11:50:00 AMတွင် ထီပိတ်ပါမည်။</p>
                         <div onClick={handleShow} className="cursorPointer d-flex align-items-center">
@@ -70,7 +70,11 @@ const TwoDChooseNumberPage = () => {
 
                         </Modal>
                     </div>
-                    <div className="twoDNumbers py-3 px-2 pb-5 ">
+                    <div className="my-2 d-flex gap-2 justify-content-center">
+                        <button className=" chooseNumDelBtn py-2 px-4 rounded-3">ဖျက်မည်</button>
+                        <button className=" chooseNumBetBtn py-2 px-4 rounded-3">ထိုးမည်</button>
+                    </div>
+                    <div className="twoDNumbers mb-5  py-3 px-2 pb-5 ">
                         <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
                             {numbers.map((item) => {
                                 return <div className="cursorPointer rounded-2 text-center numberContainer ">
@@ -93,7 +97,7 @@ const TwoDChooseNumberPage = () => {
                     </div>
                 </div>
             </div>
-            <TwoDChooseNumFooter />
+            {/* <TwoDChooseNumFooter /> */}
         </div>
     )
 }

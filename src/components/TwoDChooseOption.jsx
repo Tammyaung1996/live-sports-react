@@ -3,7 +3,7 @@ import maze from '../assets/img/maze.png';
 import flash from '../assets/img/flash.png';
 import repeat from '../assets/img/repeat.png';
 import dream from '../assets/img/dream.png';
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Modal, Offcanvas } from 'react-bootstrap';
 import '../assets/css/chooseNumber.css'
 const TwoDChooseOption = () => {
     const [isOp1Show, setIsOp1Show] = useState(false);
@@ -29,7 +29,8 @@ const TwoDChooseOption = () => {
             <div className='text-center' onClick={() => setIsOp2Show(!isOp2Show)} >
                 <img src={flash} style={{ width: '30px', height: '30px' }} />
                 <div>
-                    <small style={{ color: '#5987CC' }} >အမြန်ရွေး</small>
+                    <small style={{ color: '#5987CC' }} >အမြန်ရွေး
+                    </small>
                 </div>
             </div>
 
@@ -66,59 +67,14 @@ const TwoDChooseOption = () => {
                     </Button>
                 </Modal.Footer>
             </Modal>
-            <Modal className='amyanChooseModal' show={isOp2Show} onHide={() => setIsOp2Show(false)}>
-                <Modal.Header closeButton>
-                    <Modal.Title>အမြန်ရွေး</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={() => setIsOp2Show(false)}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={() => setIsOp2Show(false)}>
-                        Save Changes
-                    </Button>
-                </Modal.Footer>
-            </Modal>
-            <Modal className='lottoModal' show={isOp3Show} onHide={() => setIsOp3Show(false)}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={() => setIsOp3Show(false)}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={() => setIsOp3Show(false)}>
-                        Save Changes
-                    </Button>
-                </Modal.Footer>
-            </Modal>
-            <Modal className='lottoModal' show={isOp4Show} onHide={() => setIsOp4Show(false)}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={() => setIsOp4Show(false)}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={() => setIsOp4Show(false)}>
-                        Save Changes
-                    </Button>
-                </Modal.Footer>
-            </Modal>
-
-        </div>
-    )
-}
-
-export default TwoDChooseOption
-
-{/* 
- <div className="mb-2">
+            {/* Amyan Choose */}
+            <Offcanvas placement='top' show={isOp2Show} onHide={() => setIsOp2Show(false)}>
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>အမြန်ရွေး
+                    </Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                    <div className="mb-2">
                         <p className="text-white ">ဘရိတ်</p>
                         <div className="mt-4 d-flex gap-3 justify-content-center flex-wrap align-items-center">
                             {breakNums.map((n) => {
@@ -174,4 +130,42 @@ export default TwoDChooseOption
                             })}
                         </div>
                     </div>
-*/}
+                </Offcanvas.Body>
+            </Offcanvas>
+            <Modal className='lottoModal' show={isOp3Show} onHide={() => setIsOp3Show(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setIsOp3Show(false)}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={() => setIsOp3Show(false)}>
+                        Save Changes
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            <Modal className='lottoModal' show={isOp4Show} onHide={() => setIsOp4Show(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setIsOp4Show(false)}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={() => setIsOp4Show(false)}>
+                        Save Changes
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
+        </div>
+    )
+}
+
+export default TwoDChooseOption
+
+
+

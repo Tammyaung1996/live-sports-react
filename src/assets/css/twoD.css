@@ -1,7 +1,6 @@
 .twoDContainer {
     background-color: #10061e;
-    background-image: url('../img/dragonScalePattern.png');
-
+    /* background-image: url('../img/dragonScalePattern.png'); */
 }
 
 .lottoNavbar {
@@ -107,4 +106,10 @@ tr:nth-child(even) {
     color: #fff;
     background: #431E77;
 
+}
+
+@media screen and (min-width:428px) {
+    .twoDContainer {
+        padding-bottom: 80px;
+    }
 }
