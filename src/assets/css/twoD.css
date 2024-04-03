@@ -1,7 +1,7 @@
 .twoDContainer {
     background-color: #10061e;
     background-image: url('../img/dragonScalePattern.png');
-    min-height: 100vh;
+
 }
 
 .lottoNavbar {
@@ -93,6 +93,8 @@ tr:nth-child(even) {
 .lottoModal .modal-content {
     background: #2B1C40 !important;
     color: #fff;
+    width: 350px !important;
+    margin: 50px auto;
 }
 
 .whiteBtn {
