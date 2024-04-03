@@ -1,0 +1,12 @@
+.accordion-button {
+  background-color: #5987cc !important;
+  color: #fff;
+}
+
+.accordion-button::after {
+  background-image: url("../img/dropdownicon.png") !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+}
