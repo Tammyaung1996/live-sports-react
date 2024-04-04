@@ -8,6 +8,8 @@ import ForgetPassword from "../pages/ForgetPassword";
 import Register from "../pages/Register";
 
 import TwoDChooseNumberPage from "../pages/TwoDChooseNumber";
+import TwoDCheckoutPage from "../pages/TwoDCheckout";
+
 import ThreeD from "../pages/3D/ThreeD";
 
 const router = createBrowserRouter([
@@ -35,15 +37,37 @@ const router = createBrowserRouter([
       {
         path: "/2d",
         children: [
+          // {
+          //     path: '/',
+          //     element: <HomePage />,
+          //     index: true
+          // },
+          // {
+          //     path: '/login',
+          //     element: <Login />,
+          // },
+          // {
+          //     path: '/register',
+          //     element: <Register />,
+          // },
+          // {
+          //     path: '/forget-password',
+          //     element: <ForgetPassword />,
+          // },
           {
-            path: "twoD",
-            element: <TwoDPage />,
+            path: 'twoD',
+            element: <TwoDPage />
           },
           {
-            path: "chooseNumber",
-            element: <TwoDChooseNumberPage />,
+            path: 'chooseNumber',
+            element: <TwoDChooseNumberPage />
           },
-        ],
+          {
+            path: 'checkout',
+            element: <TwoDCheckoutPage />
+          }
+
+        ]
       },
       {
         path: "/3d",
