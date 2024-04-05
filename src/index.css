@@ -7,6 +7,16 @@ body {
   font-family: "Roboto", sans-serif !important;
   overflow-x: hidden;
   width: 100%;
+
+  min-height: 100vh;
+  
+}
+
+@media screen  {
+  body{
+    background: url('./src/assets/img//dragonScalePattern.png') !important;
+  background-color: #10061e !important;
+  }
 }
 
 a {
