@@ -1,0 +1,12 @@
+.color-table thead{
+    background: #000 !important;
+}
+.color-table tbody tr:nth-child(odd) {
+    background-color: #000  !important; /* Light gray color for odd rows */
+    color: blue;
+    font-size: 7rem;
+}
+
+.color-table tbody tr:nth-child(even) {
+    background-color: #fff; /* White color for even rows */
+}

@@ -11,6 +11,9 @@ import TwoDChooseNumberPage from "../pages/TwoDChooseNumber";
 import TwoDCheckoutPage from "../pages/TwoDCheckout";
 
 import ThreeD from "../pages/3D/ThreeD";
+import Holiday from "../pages/Holiday";
+import History from "../pages/History";
+import LeaderBoard from "../pages/LeaderBoard";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +37,7 @@ const router = createBrowserRouter([
         path: "/forget-password",
         element: <ForgetPassword />,
       },
+      
       {
         path: "/2d",
         children: [
@@ -63,11 +67,26 @@ const router = createBrowserRouter([
             element: <TwoDChooseNumberPage />
           },
           {
+
+            path: "leader-board",
+            element: <LeaderBoard />,
+          },
+          {
+            path: "history",
+            element: <History />,
+          },
+          {
+            path: "holiday",
+            element: <Holiday />,
+          },
+        ],
+        {
             path: 'checkout',
             element: <TwoDCheckoutPage />
           }
 
         ]
+
       },
       {
         path: "/3d",

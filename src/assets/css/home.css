@@ -1,7 +1,18 @@
 .homes{
-    background: url('../img//dragonScalePattern.png');
+    /* background: url('../img//dragonScalePattern.png'); */
     /* background-attachment: fixed; */
-    padding: 80px 0;
+    padding-top: 80px;
 
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
+
+/* Button.jsx */
+.gradient-text {
+    font-size: 3rem;
+    background: -webkit-linear-gradient(45deg, #2f66d3,#b31da4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
