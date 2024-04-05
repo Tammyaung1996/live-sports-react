@@ -1,0 +1,15 @@
+.twoDCheckout {
+    background: #2B1C40;
+    color: #fff;
+    height: 100vh;
+}
+
+.twoDCheckout input {
+    padding: 0;
+    text-align: center;
+    width: 60px;
+    background: #fff;
+    background: inherit;
+    border: none;
+    outline: none;
+}

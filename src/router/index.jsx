@@ -8,6 +8,8 @@ import ForgetPassword from "../pages/ForgetPassword";
 import Register from "../pages/Register";
 
 import TwoDChooseNumberPage from "../pages/TwoDChooseNumber";
+import TwoDCheckoutPage from "../pages/TwoDCheckout";
+
 import ThreeD from "../pages/3D/ThreeD";
 import Holiday from "../pages/Holiday";
 import History from "../pages/History";
@@ -39,15 +41,33 @@ const router = createBrowserRouter([
       {
         path: "/2d",
         children: [
+          // {
+          //     path: '/',
+          //     element: <HomePage />,
+          //     index: true
+          // },
+          // {
+          //     path: '/login',
+          //     element: <Login />,
+          // },
+          // {
+          //     path: '/register',
+          //     element: <Register />,
+          // },
+          // {
+          //     path: '/forget-password',
+          //     element: <ForgetPassword />,
+          // },
           {
-            path: "twoD",
-            element: <TwoDPage />,
+            path: 'twoD',
+            element: <TwoDPage />
           },
           {
-            path: "chooseNumber",
-            element: <TwoDChooseNumberPage />,
+            path: 'chooseNumber',
+            element: <TwoDChooseNumberPage />
           },
           {
+
             path: "leader-board",
             element: <LeaderBoard />,
           },
@@ -60,6 +80,13 @@ const router = createBrowserRouter([
             element: <Holiday />,
           },
         ],
+        {
+            path: 'checkout',
+            element: <TwoDCheckoutPage />
+          }
+
+        ]
+
       },
       {
         path: "/3d",
